@@ -84,9 +84,9 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(lPopu){
-    lPopu = zooAnimals.filter(function(item){
-      return item.animal_name.length < 5;
-    })
+    return lPopu.filter(lowPopu =>{
+      return(lowPopu.population < 5)
+    });
   }
   
 
